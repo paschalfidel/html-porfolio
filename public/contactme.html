@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paschal's Contact</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <style>
+      #profile-link-container {
+        display: flex;
+        justify-content: center;
+        gap: 70px;
+      }
+    </style>
+</head>
+<body>
+    
+    <nav class="navbar navbar-dark bg-dark fixed-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">Paschal Omereife</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark" aria-label="Toggle navigation">
+            <span><img src="../images/myimage.jpg" height="50" width="50" style="border-radius: 50%;"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark" aria-labelledby="offcanvasNavbarDarkLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel"><img src="../images/myimage.jpg" height="50" width="50" style="border-radius: 50%;"> Paschal Omereife</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="./aboutme.html">About Me</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./contactme.html">Contact Me</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Features
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="./family.html">Family</a></li>
+                    <li><a class="dropdown-item" href="./business.html">Business</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="../gallery/personalsite.html">Gallery</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      
+      <div class="container py-4">
+        
+        <div class="p-5 mb-4 bg-body-tertiary rounded-3">
+        <div class="container-fluid py-5" style="text-align: center;">
+          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Get in Touch</h1>
+          <p class="lead">I'd love to hear from you! Whether you have a project, a question or just want to say hi, feel free to reach out.</p>
+        </div>
+        <div class="container py-3">
+          <div id="profile-link-container" class="pt-4 mt-4 text-body-secondary border-top text-center">
+          <a id="profile-link" href="https://github.com/paschalfidel/" target="_blank"><img src="../images/github-logo.png" height="30" width="30" alt="github-logo"></a>
+          <a id="profile-link" href="https://web.facebook.com/omereife/" target="_blank"><img src="../images/facebook-logo.jpg" height="30" width="30" alt="Facebook_Logo"></a>
+          <a id="profile-link" href="https://www.instagram.com/paschalomens/" target="_blank"><img src="../images/instagram-log.png" height="30" width="30" alt="instagram-log"></a>
+          <a id="profile-link" href="https://x.com/paschalomens/" target="_blank"><img src="../images/x-logo.png" height="30" width="30" alt="x-logo"></a>
+          <a id="profile-link" href="https://www.linkedin.com/in/paschalomereife/" target="_blank"><img src="../images/linkedin-logo.png" height="30" width="30" alt="linkedin-logo"></a>
+          <a id="profile-link" href="https://wa.me/+2348182799154?text=Hey! Paschal, Your Web Developer Is Here" target="_blank"><img src="../images/whatsapp-logo.jpg" height="30" width="30" alt="whatsapp-logo"></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid py-5 px-5">
+        <div class="pt-4 mt-4 text-body-secondary border-top text-center">
+        <p class="lead" style="text-align: center;">You can also fill this form with your concerns and I will reach out to you.</p>
+      </div>
+      <hr>
+
+      <form class="lead row g-3 needs-validation" style="margin-left: 80px; margin-right: 80px;" novalidate>
+        <div class="col-md-4 position-relative">
+          <label for="validationTooltip01" class="form-label">First name</label>
+          <input type="text" class="form-control" id="validationTooltip01" required>
+          <div class="valid-tooltip">
+            Looks good!
+          </div>
+        </div>
+        <div class="col-md-4 position-relative">
+          <label for="validationTooltip02" class="form-label">Last name</label>
+          <input type="text" class="form-control" id="validationTooltip02" required>
+          <div class="valid-tooltip">
+            Looks good!
+          </div>
+        </div>
+        <div class="col-md-4 position-relative">
+          <label for="validationTooltipUsername" class="form-label">Email</label>
+          <div class="input-group has-validation">
+            <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+            <input type="text" class="form-control" id="validationTooltipUsername" aria-describedby="validationTooltipUsernamePrepend" required>
+            <div class="invalid-tooltip">
+              Please choose a unique and valid email.
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 position-relative">
+          <label for="validationTooltip03" class="form-label">City</label>
+          <input type="text" class="form-control" id="validationTooltip03" required>
+          <div class="invalid-tooltip">
+            Please provide a valid city.
+          </div>
+        </div>
+        <div class="col-md-3 position-relative">
+          <label for="validationTooltip04" class="form-label">State</label>
+          <select class="form-select" id="validationTooltip04" required>
+            <option selected disabled value="">Choose...</option>
+            <option>...</option>
+          </select>
+          <div class="invalid-tooltip">
+            Please select a valid state.
+          </div>
+        </div>
+        <div class="col-md-3 position-relative">
+          <label for="validationTooltip05" class="form-label">Zip</label>
+          <input type="text" class="form-control" id="validationTooltip05" required>
+          <div class="invalid-tooltip">
+            Please provide a valid zip.
+          </div>
+        </div> 
+        <div class="col-md-3 position-relative">
+          <label for="message" class="form-label">Your Message:</label><br>
+          <textarea class="lead" id="message" name="message" rows="5" cols="108" placeholder="Type your message here"></textarea><br>
+        </div>
+
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit">Submit form</button>
+        </div>
+      </form>
+      </div> 
+    </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

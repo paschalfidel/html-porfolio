@@ -1,0 +1,75 @@
+<html>
+<head>
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="./surveyform.css">
+</head>
+<body>
+  <h1 id="title">Spec360 Survey Form</h1>
+  <p id="description">Please fill out the survey form below.</p>
+  
+  <div class="container">
+  <form id="survey-form">
+    <div class="form-row">
+  <div class="form-group">
+    <label for="firstName" >First Name</label>
+    <input type="text" id="firstName" name="firstName" required placeholder="Enter your first name">
+    </div> 
+    <div class="form-group">
+    <label for="lastName">Last Name</label>
+    <input type="text" id="lastName" name="lastName" required placeholder="Enter your last name"> 
+    </div>
+     </div>
+  <div class="form-row">
+    <div class="form-group">
+    <label for="email" id="email-label">Email</label>
+  <input type="email" id="email" required placeholder="Enter email">
+  </div>
+ <div class="form-group">
+  <label for="number" id="number-label">Number</label>
+  <input type="number" id="number" min="1" max="5000" placeholder="Enter number">
+  </div>
+  </div>
+   <div class="form-row">
+    <div class="form-group">
+    <label for="age">Age</label>
+  <input type="age" id="age" name="age" required placeholder="Enter age">
+  </div>
+ <div class="form-group">
+  <label for="number">Gender</label>
+  <select type="gender" name="gender" required>
+    <option value="">Select your gender</option>
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+    <option value="other">Other</option>
+     </select>
+  </div>
+  </div>
+
+</form>
+  <select id="dropdown">
+    <option value="">Choose session</option>
+    <option value="1">Morning Session</option>
+    <option value="2">Afternoon Session</option>
+    <option value="3">Evening Session</option>
+    </select>
+    
+
+
+      <h5>Your Account Type</h5>
+  <label id="special-account" for="special-account"><input type="radio" name="radio" class="inline" value="05"/>Special Account</label>
+        
+  <label id="ordinary-account" for="ordinary-account">
+    <input  type="radio" name="account-type" class="inline" value="10"/>Ordinary Account</label>
+
+  
+<div class="comments">
+  <label id="comments" for="comments">Comments</label>  <textarea id="text-area"></textarea>
+    </div>
+    <input id="submit-btn" type="submit" value="Submit-Form">
+</div>
+
+    <footer>
+        &copy Paschal Omereife 2023
+    </footer>
+</body>
+</html>
