@@ -10,7 +10,25 @@
       #profile-link-container {
         display: flex;
         justify-content: center;
-        gap: 70px;
+        gap: 10%;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      @media (max-height: 800px) {
+        h1 {
+          font-size: 20px;
+        }
+
+        h3 {
+          font-size: 20px;
+        }
+        p {
+          font-size: 10px;
+        }
       }
     </style>
   </head>
@@ -96,7 +114,7 @@
         <div class="h-90 p-5 text-bg-dark rounded-3">
           <h3>Explore My Experiences</h3>
           <p class="lead" style="font-size: 15px">Beyond being a full stack web developer, I’ve ventured into various fields that have shaped my growth as an entrepreneur. From running a business as a sales rep to delivering excellent customer service and managing social media platforms, these experiences have broadened my skill set and perspective. Click below to see how these roles have influenced my journey and the value I bring to every project.</p>
-          <button class="btn btn-outline-light" type="button">View My Other Works</button>
+          <a href="./public/business.html"><button class="btn btn-outline-light" type="button">View My Other Works</button></a>
         </div>
       </div>
 

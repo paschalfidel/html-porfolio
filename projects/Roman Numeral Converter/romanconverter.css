@@ -19,7 +19,7 @@ body {
 h1 {
   text-align: center;
   font-size: 2.5rem;
-  margin-top: 30px;
+  margin-top: 50px;
 }
 
 .input-container {
@@ -29,7 +29,8 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #3e3f4a
+  background-color: #3e3f4a;
+  padding: 10px;
 }
 
 
@@ -39,24 +40,34 @@ h1 {
   min-width:400px;
   min-height: 60px;
   font-size: 1.5rem;
-  margin-top: 0px;
-  border: 1.5px solid var(--dark-blue);
+  border: 1.5px solid white;
+  margin-bottom: 30px;
 }
 
 #convert-btn:hover {
   background-color: #a87932;
-  transform: scale(1.1)
+  transform: scale(1.05)
+}
+
+#convert-btn {
+    height: auto;
+    transition: transform 1s ease, box-shadow 1s ease;
 }
 
 input {
-  height: 60px;
+  min-height: 60px;
   width: 400px;
   color: white;
   background-color: var(--dark-blue);
   font-size: 2.5rem;
-  border: 1px solid var(--dark-blue);
+  border: 1px solid white;
   margin-top: 40px;
+  margin-bottom: 10px;
   text-align: center;
+}
+
+input::placeholder {
+  font-size: 20px;
 }
 
 
@@ -71,13 +82,13 @@ label {
   margin: 10px 0;
   min-width: 470px;
   width: fit-content;
-  height: 30px;
+  height: 100px;
   word-break: break-word;
   padding: 20px;
   border: 3px solid var(--light-grey);
   font-size: 2.5rem;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 50px;
   }
 
   footer {
