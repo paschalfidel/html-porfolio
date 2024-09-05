@@ -1,11 +1,24 @@
 <html>
 <head>
   <title>Survey Form</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
   <link rel="stylesheet" href="./surveyform.css">
 </head>
 <body>
+
+  <header data-bs-theme="dark">
+    <nav class="navbar navbar-dark bg-dark fixed-top" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../projects.html">Back to Projects</a>
+          </button>
+        </div>
+      </nav>
+  </header>
+
   <h1 id="title">Spec360 Survey Form</h1>
   <p id="description">Please fill out the survey form below.</p>
+  <hr>
   
   <div class="container">
   <form id="survey-form">
@@ -53,21 +66,27 @@
     <option value="3">Evening Session</option>
     </select>
     
+      <hr>
 
-
-      <h5>Your Account Type</h5>
-  <label id="special-account" for="special-account"><input type="radio" name="radio" class="inline" value="05"/>Special Account</label>
+      <h3>Your Account Type</h3>
+      
+  <label id="special-account" for="special-account"><input type="radio" name="radio" class="inline" value="05"/> Special Account</label>
         
   <label id="ordinary-account" for="ordinary-account">
-    <input  type="radio" name="account-type" class="inline" value="10"/>Ordinary Account</label>
+    <input  type="radio" name="account-type" class="inline" value="05"/> Ordinary Account</label>
 
   
 <div class="comments">
-  <label id="comments" for="comments">Comments</label>  <textarea id="text-area"></textarea>
-    </div>
+  <label id="comments" for="comments">Comments</label> 
+</div>
+
+<div class="textarea">
+  <textarea id="text-area"></textarea>
+</div>
     <input id="submit-btn" type="submit" value="Submit-Form">
 </div>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <footer>
         &copy Paschal Omereife 2023
     </footer>

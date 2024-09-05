@@ -10,7 +10,7 @@
       #profile-link-container {
         display: flex;
         justify-content: center;
-        gap: 70px;
+        gap: 10%;
       }
     </style>
 </head>
@@ -61,11 +61,11 @@
         
         <div class="p-5 mb-4 bg-body-tertiary rounded-3">
         <div class="container-fluid py-5" style="text-align: center;">
-          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Get in Touch</h1>
+          <h1 class="display-4 display-md-3 display-lg-1 fw-bold text-body-emphasis lh-1 mb-3 text-center">Get in Touch</h1>
           <p class="lead">I'd love to hear from you! Whether you have a project, a question or just want to say hi, feel free to reach out.</p>
         </div>
         <div class="container py-3">
-          <div id="profile-link-container" class="pt-4 mt-4 text-body-secondary border-top text-center">
+          <div id="profile-link-container" class="pt-5 mt-2 text-body-secondary border-top text-center">
           <a id="profile-link" href="https://github.com/paschalfidel/" target="_blank"><img src="../images/github-logo.png" height="30" width="30" alt="github-logo"></a>
           <a id="profile-link" href="https://web.facebook.com/omereife/" target="_blank"><img src="../images/facebook-logo.jpg" height="30" width="30" alt="Facebook_Logo"></a>
           <a id="profile-link" href="https://www.instagram.com/paschalomens/" target="_blank"><img src="../images/instagram-log.png" height="30" width="30" alt="instagram-log"></a>
@@ -82,7 +82,7 @@
       </div>
       <hr>
 
-      <form class="lead row g-3 needs-validation" style="margin-left: 80px; margin-right: 80px;" novalidate>
+      <form class="lead row g-3 needs-validation" novalidate>
         <div class="col-md-4 position-relative">
           <label for="validationTooltip01" class="form-label">First name</label>
           <input type="text" class="form-control" id="validationTooltip01" required>
@@ -131,11 +131,14 @@
             Please provide a valid zip.
           </div>
         </div> 
-        <div class="col-md-3 position-relative">
-          <label for="message" class="form-label">Your Message:</label><br>
-          <textarea class="lead" id="message" name="message" rows="5" cols="108" placeholder="Type your message here"></textarea><br>
+        <div class="container">
+          <div class="row">
+        <div class="col-12 col-md-8">
+          <label for="message" class="mt-5">Your Message:</label><br>
+          <textarea class="lead form-control mt-3" id="message" name="message" rows="4" placeholder="Type your message here" ></textarea><br>
         </div>
-
+      </div>
+      </div>
         <div class="col-12">
           <button class="btn btn-primary" type="submit">Submit form</button>
         </div>
